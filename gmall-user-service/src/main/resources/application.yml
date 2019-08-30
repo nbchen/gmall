@@ -1,0 +1,40 @@
+# 服务端口
+server:
+  port: 8082
+
+# jdbc配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gmall_study?characterEncoding=utf8&useSSL=false&serverTimezone=CTT&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  # dubbo 配置
+  dubbo:
+    # dubbo 服务名称
+    application: user-service
+    # dubbo 服务扫描路径
+    base-package: com.nbchen.gmall
+    # dubbo 通讯协议的名称
+    protocol:
+      name: dubbo
+    registry:
+      # zookeeper 注册中心的名称
+      address: 192.168.17.146:2181
+      # zookeeper 通讯协议的名称
+      protocol: zookeeper
+
+
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml # mapper配置文件位置
+  configuration:
+    map-underscore-to-camel-case: true   # 驼峰影射(数据库下划线转为java驼峰)
+
+# 日志级别
+logging:
+  level:
+    com.nbchen.gmall.*: debug  # 自定义路径下的日志级别
+  # com.nbchen.gmall.user.mapper.*: debug  # 自定义路径下的日志级别
+  # file: classpath:logback-spring.xml # 自定义logback.xml的名字
+
+
