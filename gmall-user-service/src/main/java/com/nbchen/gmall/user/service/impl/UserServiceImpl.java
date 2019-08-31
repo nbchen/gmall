@@ -1,4 +1,4 @@
-package com.nbchen.gmall.user.impl;
+package com.nbchen.gmall.user.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.nbchen.gmall.bean.UmsMember;

@@ -28,6 +28,12 @@
 - gmall-user-service(用户服务service层)port:8082
 - gmall-user-web(用户服务web层)port:8081 ==> ip: user.gmall.com 
 
+
+- gmall-manage-service(后台界面系统服务service层)port:8084
+- gmall-manage-web(后台界面系统服务web层)port:8083 ==> ip: manage.gmall.com 
+
+
+
 # 注意点
 ## nginx 配置 80
 [nginx 配置 80](https://github.com/nbchen/gmall/blob/assets/nginx配置80端口.md.md)
@@ -53,6 +59,6 @@ window::
 linux::192.168.17.146
 0. 配置jdk (rz上传安装,防火墙关闭)
 1. 配置redis (开机自启动)
-2. 配置tomcat:dubbo-admin,启动服务监控中心 (开机自启动)
-3. 配置zookeeper服务注册中心 (开机自启动)
+2. 配置tomcat:dubbo-admin,启动服务监控中心 (开机自启动) 192.168.17.146:8080/dubbo,登录:root/root
+3. 配置zookeeper服务注册中心 (开机自启动)  
 4

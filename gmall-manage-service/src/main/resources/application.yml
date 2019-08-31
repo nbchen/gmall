@@ -1,6 +1,6 @@
 # 服务端口
 server:
-  port: 8082
+  port: 8084
 
 # jdbc配置
 spring:
@@ -13,7 +13,7 @@ spring:
   # dubbo 配置
   dubbo:
     # dubbo 服务名称
-    application: user-service
+    application: manage-service
     # dubbo 服务扫描路径
     base-package: com.nbchen.gmall
     # dubbo 通讯协议的名称

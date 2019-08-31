@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import tk.mybatis.mapper.annotation.KeySql;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -22,7 +21,7 @@ import java.util.Date;
 public class UmsMember implements Serializable {
 
     @Id
-    @KeySql(useGeneratedKeys = true) // 主键返回策略
+//    @KeySql(useGeneratedKeys = true) // 主键返回策略
     private String id; // 主键
     private String memberLevelId;
     private String username; // 用户名

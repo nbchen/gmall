@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import tk.mybatis.mapper.annotation.KeySql;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -24,7 +23,7 @@ import java.math.BigDecimal;
 public class UmsMemberLevel implements Serializable {
 
     @Id
-    @KeySql(useGeneratedKeys = true)
+//    @KeySql(useGeneratedKeys = true)
     private String id;
     private String name;
     private int growthPoint; // 成长值
