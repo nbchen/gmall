@@ -5,7 +5,7 @@
 - redis
 - Elastic search(kibana)
 - SSO单点登录
-- fastdfs分布式文件存储
+- FastDFS分布式文件存储
 - ActiveMQ
 - 支付宝支付
 - mysql
